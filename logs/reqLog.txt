@@ -40,3 +40,6 @@
 20240406	10:24:28	a9cac51c-bf52-4fac-81fd-d994337d0c31	GET	undefined	/employees
 20240406	10:26:03	0d0adc55-f9ea-4c84-b39d-7b2d75a316c9	POST	undefined	/employees
 20240406	10:26:07	ab38c02e-c6ff-4cc3-bedf-1b6ef16ddced	GET	undefined	/employees
+20240406	10:41:30	28edd902-c6d0-49e7-95dc-64f5249d2d2b	GET	undefined	/employees
+20240406	10:41:31	456fdb29-9869-4a0b-82b9-d432ed3e8715	GET	undefined	/employees
+20240406	10:42:00	8acb8e89-ee31-4ac4-a886-e30389ad707f	GET	undefined	/employees

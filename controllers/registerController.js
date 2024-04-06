@@ -1,3 +1,4 @@
+const User = require('../model/User');
 const usersDB = {
     users: require('../model/users.json'),
     setUsers: function (data) { this.users = data }

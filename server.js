@@ -1,3 +1,4 @@
+require('dotenv').config(); 
 const express = require('express');
 const app = express();
 const path = require('path');
@@ -6,15 +7,7 @@ const corsOptions = require('./config/corsOptions');
 const { logger } = require('./middleware/logEvents');
 const errorHandler = require('./middleware/errorHandler');
 const PORT = process.env.PORT || 3500;
-const connectionString = 'mongodb+srv://deepakimandi:wfwBPUyrbm3OhuGO@cluster0.tiwonez.mongodb.net/EmployeeDB?retryWrites=true&w=majority&appName=Cluster0';
-const connectionParams = { useNewUrlParser: true, useUnifiedTopology: true }
-
-const mongoose = require('mongoose');
-mongoose.connect(connectionString, connectionParams).then(() => {
-    console.log('Connected to the database');
-}).catch((e) => {
-    console.log('Error: ', e);
-});
+const connectDB = require('./connectDB'); 
 
 // custom middleware logger
 app.use(logger);
